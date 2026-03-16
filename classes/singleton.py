@@ -4,6 +4,7 @@ class A(object):
     def __new__(cls):
         print("Entered __new__")
         if not cls.instance:
+            print("Instance Creating...")
             cls.instance = super().__new__(cls)
         return cls.instance
 
