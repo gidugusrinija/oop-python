@@ -55,12 +55,10 @@ def find_anagrams(s, p):
 
         s_map[right_char] = s_map.get(right_char, 0) + 1
 
-        if left_char in s_map:
-
-            if s_map[left_char] == 1:
-                del s_map[left_char]
-            else:
-                s_map[left_char] -= 1
+        if s_map[left_char] == 1:
+            del s_map[left_char]
+        else:
+            s_map[left_char] -= 1
 
         if s_map == p_map:
             res.append(i-l_p+1)
@@ -68,7 +66,7 @@ def find_anagrams(s, p):
 
 
 print(find_anagrams(s, p))
-print(approach1(s, p))
+# print(approach1(s, p))
 
 
 
