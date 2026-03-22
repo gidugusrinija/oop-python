@@ -28,6 +28,7 @@ def approach1(s, p):
             res.append(i)
     return res
 
+
 # using sliding window
 
 def find_anagrams(s, p):
