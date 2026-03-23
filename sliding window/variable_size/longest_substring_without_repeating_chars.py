@@ -15,7 +15,7 @@ def longest_substring(s):
     char_map = {}
 
     for right, val in enumerate(s):
-        if val in char_map and right > left:
+        if val in char_map and char_map[val] >= left:
             left = char_map[val] + 1
         char_map[val] = right
         if right - left + 1 > max_len:
