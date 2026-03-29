@@ -8,6 +8,9 @@ class A(object):
             cls.instance = super().__new__(cls)
         return cls.instance
 
+    def __init__(self):
+        print("Entered init")
+
     def __eq__(self, other):
         return id(self) == id(other)
 

@@ -1,3 +1,11 @@
+"""
+1. sort the array
+2. fix Pointer i
+3. now find j, k pointers
+repeat until we found the reqd sum
+"""
+
+
 l = [1, 0, -2, -6, 5, 4, 3, 9, 4]
 t = 3
 
